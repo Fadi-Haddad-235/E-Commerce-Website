@@ -97,6 +97,7 @@ a:hover {
     font-size: 1rem;
     background-color: #BCBCBC;
     text-justify: auto;
+    border: 1px solid #bcbcbc;
 }
 
 #labelMargin {
