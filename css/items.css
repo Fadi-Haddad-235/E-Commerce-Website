@@ -103,3 +103,62 @@ a:hover {
     margin-left: 2%;
     margin-right: 7%;
 }
+
+
+@media (max-width:800px) {
+    .iconImage a {
+        font-size: 2.5rem;
+    }
+
+    .iconImage h2 {
+        font-size: 1rem;
+    }
+
+    .optionDataTitle {
+        font-size: 1.5rem;
+    }
+
+    .rowDisplay {
+        font-size: 0.75rem;
+    }
+
+    .rowData {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:680px) {
+    .containerTitle {
+        font-size: 0.75rem;
+    }
+
+    .iconImage a {
+        font-size: 2rem;
+    }
+
+    .optionDataTitle {
+        font-size: 1.25rem;
+    }
+
+    .rowDisplay {
+        font-size: 0.5rem;
+    }
+
+    .rowData {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .containerTitle {
+        font-size: 0.65rem;
+    }
+
+    .iconImage a {
+        font-size: 1.25rem;
+    }
+
+    .optionDataTitle {
+        font-size: 1.10rem;
+    }
+}
