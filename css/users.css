@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTitle {
+    padding-left: 15%;
+    background: #486082;
+    display: flex;
+    justify-content: center;
+}
+
+.containerBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.adminOption {
+    min-height: 92.5vh;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10%;
+    background-color: #486082;
+}
+
+.optionData {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
