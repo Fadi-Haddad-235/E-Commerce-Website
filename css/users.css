@@ -98,6 +98,11 @@ a:hover {
     background-color: #BCBCBC;
 }
 
+#labelMargin {
+    margin-left: 2%;
+    margin-right: 7%;
+}
+
 @media (max-width:800px) {
     .iconImage a {
         font-size: 2.5rem;
