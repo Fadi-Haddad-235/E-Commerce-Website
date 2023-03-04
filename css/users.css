@@ -91,3 +91,9 @@ a:hover{
     justify-content: space-around;
     align-items: center;
 }
+
+.rowData{
+    width: 20%;
+    font-size: 1.25rem;
+    background-color: #BCBCBC;
+}
