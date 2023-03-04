@@ -76,6 +76,18 @@ a:hover{
     border-radius: 20%;
 }
 
+.optionDataTitle {
+    display: flex;
+    justify-content: center;
+}
 
+.colDisplay {
+    display: flex;
+    flex-direction: column;
+}
 
-
+.rowDisplay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
