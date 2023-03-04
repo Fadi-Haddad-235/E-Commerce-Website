@@ -37,4 +37,45 @@ body {
     justify-content: flex-start;
 }
 
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0%;
+    align-items: center;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0%;
+    align-items: center;
+}
+
+.database {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0%;
+    align-items: center;
+}
+
+.iconImage a {
+    font-size: 3.5rem;
+}
+
+a,
+a:visited {
+    color: inherit;
+}
+
+a:hover{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20%;
+}
+
+
+
 
