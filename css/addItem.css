@@ -81,13 +81,33 @@ a:hover {
     justify-content: center;
 }
 
+.colDivision {
+    display: flex;
+    flex-direction: row;
+}
 
+.profileImage {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+}
 
-.btn{
+#profileIcon{
+    font-size: 15rem;
+    display: flex;
+    justify-content: center;
+}
+
+.itemInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
     margin-top: 3%;
     background-color: #0069FC;
     border-radius: 5%;
-    color: white;
     margin-left: 40%;
     width: 20%;
     display: flex;
