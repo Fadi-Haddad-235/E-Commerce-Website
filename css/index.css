@@ -272,6 +272,9 @@
     object-fit: cover;
     margin-right: 10px;
   }
+
+
+  
   .add-button, .remove-button {
     background-color: #0095ff;
     border: 1px solid transparent;
