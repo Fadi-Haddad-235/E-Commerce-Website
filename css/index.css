@@ -67,6 +67,8 @@
 .box:hover .image {
     opacity: 0.5;
 }
+
+
 .categories .category{
     display: flex;
     flex-direction: column;
