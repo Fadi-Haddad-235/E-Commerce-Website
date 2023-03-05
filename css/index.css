@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    border:0px;
 }
 .hero{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +67,8 @@
 .box:hover .image {
     opacity: 0.5;
 }
+
+
 .categories .category{
     display: flex;
     flex-direction: column;
@@ -93,3 +96,132 @@
     margin: 8%;
     font-size: 20px;
 }
+
+.logo img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .navIcon img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .navBar {
+    height: 25vh;
+    width: 100%;
+  }
+  
+  .navTop {
+    height: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00347d;
+    padding: 5px;
+  }
+  
+  .contact {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navBtn {
+    background-color: #00347d;
+    color: aliceblue;
+    width: 15%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.7s;
+  }
+  
+  .navBtn:hover {
+    background-color: aliceblue;
+    color: #00347d;
+    transition: 0.7s;
+  }
+  
+  .shipping {
+    color: aliceblue;
+    padding: 10px;
+  }
+  
+  .icons {
+    background-color: #00347d;
+    height: 80%;
+  }
+  
+  .navIcon {
+    height: 100%;
+  }
+  
+  .navLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+  }
+  
+  .logo {
+    height: 100%;
+    width: 50%;
+  }
+  
+  .navBottom {
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00347d;
+    align-items: center;
+  }
+  
+  .categories-btn {
+    height: 80%;
+    width: 9%;
+    color: aliceblue;
+    background-color: #00347d;
+    transition: 0.7s;
+    border-radius: 10px;
+  }
+  
+  .categories-btn:hover {
+    background-color: aliceblue;
+    color: #00347d;
+    transition: 0.7s;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .navBtn {
+      font-size: 10px;
+    }
+    .shipping {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navBtn {
+      font-size: 7px;
+    }
+  }
+  
+  @media screen and (max-height: 500px) {
+    .categories-btn {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-height: 300px) {
+    .categories-btn {
+      font-size: 7px;
+    }
+  }
+  
