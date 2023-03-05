@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link href="css\addItem.css" rel="StyleSheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>USERS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="containerTitle">
+            <h1>Admin Page</h1>
+        </div>
+        <div class="containerBody">
+            <!-- Left Side -->
+            <div class="adminOption">
+                <div class="home iconImage">
+                    <a href="#" class="fa fa-home"></a>
+                    <h2>Home</h2>
+                </div>
+
+                <div class="users iconImage">
+                    <a href="users.html" class="fas fa-user-friends"></a>
+                    <h2>Users</h2>
+                </div>
+
+                <div class="database iconImage">
+                    <a href="items.html" class="fa fa-database"></a>
+                    <h2>Items</h2>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="optionData">
+                <h1 class="optionDataTitle">ADD ITEM</h1>
+                <div class="colDivision">
+                    <div class="profileImage">
+                        <a class="fa fa-user" id="profileIcon"></a>
+                        <input placeholder="Image URL" />
+                        <a href="#" class="btn">Edit Image</a>
+                    </div>
+                    <div class="itemInfo">
+                        <div class="inputdisplay">
+                            <label>Name</label>
+                            <input placeholder="Product Name" />
+                        </div>
+                        <div class="inputdisplay">
+                            <label>Description</label>
+                            <input placeholder="Description" />
+                        </div>
+                        <div class="inputdisplay">
+                            <label>Price</label>
+                            <input placeholder="Price" />
+                        </div>
+                        <div class="inputdisplay">
+                            <label>Quantity</label>
+                            <input placeholder="Quantity" />
+                        </div>
+                    </div>
+                </div>
+                <a href="items.html" class="btn" id="btn">Add Item!</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
