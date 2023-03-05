@@ -232,11 +232,12 @@ img {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  min-height: 100px;
 }
 
 .prodImage {
-  height: 100%;
-  width: 15%;
+  height: 70px;
+  width: 90px;
   margin-right: 5px;
 }
 
@@ -248,7 +249,6 @@ img {
 
 .prodImageName {
   display: flex;
-  height: 100%;
   width: 45%;
   align-items: center;
 }
