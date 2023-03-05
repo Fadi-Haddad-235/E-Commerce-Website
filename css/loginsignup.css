@@ -155,3 +155,78 @@ a{
     font-size: 16px;
     cursor: pointer;
   }
+  .footer {
+    height: 35vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #486082;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 15%;
+  }
+  .usefulLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 80%;
+    width: 15%;
+  }
+  .siteMap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    height: 80%;
+    width: 15%;
+  }
+  
+  .socialMediaIcon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 25%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .socialMediaIcon > img {
+    height: 100%;
+    width: 23%;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .navBtn {
+      font-size: 10px;
+    }
+    .shipping {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navBtn {
+      font-size: 7px;
+    }
+  }
+  
+  @media screen and (max-height: 500px) {
+    .categories {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-height: 300px) {
+    .categories {
+      font-size: 7px;
+    }
+  }
