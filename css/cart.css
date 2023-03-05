@@ -127,3 +127,27 @@ img {
     font-size: 7px;
   }
 }
+
+.info {
+  height: 10vh;
+  width: 80vw;
+  margin: 20px auto;
+  display: flex;
+  border-bottom: 2px black solid;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
+  font-size: 25px;
+}
+.products {
+  display: flex;
+  flex-grow: 2;
+  justify-content: start;
+  align-items: center;
+  font-size: 25px;
+}
