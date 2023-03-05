@@ -5,12 +5,17 @@
   box-sizing: border-box;
 }
 
-img {
+.logo img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
+.navIcon img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 .navBar {
   height: 25vh;
   width: 100%;
@@ -86,7 +91,7 @@ img {
   align-items: center;
 }
 
-.categories {
+.categories-btn {
   height: 80%;
   width: 9%;
   color: aliceblue;
@@ -95,7 +100,7 @@ img {
   border-radius: 10px;
 }
 
-.categories:hover {
+.categories-btn:hover {
   background-color: aliceblue;
   color: #00347d;
   transition: 0.7s;
@@ -117,13 +122,13 @@ img {
 }
 
 @media screen and (max-height: 500px) {
-  .categories {
+  .categories-btn {
     font-size: 10px;
   }
 }
 
 @media screen and (max-height: 300px) {
-  .categories {
+  .categories-btn {
     font-size: 7px;
   }
 }
