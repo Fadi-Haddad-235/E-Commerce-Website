@@ -170,8 +170,8 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  height: 25%;
   width: 100%;
+  object-fit: contain;
 }
 
 .socialMediaIcon > img {
@@ -192,7 +192,6 @@
     font-size: 10px;
   }
 }
-
 @media screen and (max-width: 300px) {
   .social {
     font-size: 5px;
@@ -202,8 +201,5 @@
   }
   .siteMap {
     font-size: 5px;
-  }
-  img {
-    display: none;
   }
 }
