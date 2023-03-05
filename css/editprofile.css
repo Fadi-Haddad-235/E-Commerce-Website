@@ -123,19 +123,19 @@
     margin-right: 30%;
     margin-left: 30%;
     gap:30px;
-}
+  }
   input {
     padding: 2%;
     border-radius: 1%;
     border: 1px solid #ccc;
     font-size: 16px;
-}
+  }
 .input-control {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
     width: 300px;
-}
+  }
 .button1{
     align-self: center;
     padding: 10px 20px;
@@ -146,4 +146,30 @@
     color: #fff;
     font-size: 16px;
     cursor: pointer;
-}
+  }
+@media screen and (max-width: 1000px) {
+    .navBtn {
+      font-size: 10px;
+    }
+    .shipping {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .navBtn {
+      font-size: 7px;
+    }
+  }
+  
+  @media screen and (max-height: 500px) {
+    .categories {
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-height: 300px) {
+    .categories {
+      font-size: 7px;
+    }
+  }
