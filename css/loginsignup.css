@@ -95,3 +95,63 @@
     color: #00347d;
     transition: 0.7s;
   }
+  .box{
+    position: relative;
+    height:150px;
+    background-color: #00347D;
+    text-align: center;
+    border:1px solid;
+
+  }
+  .align{
+    position: relative;
+    font-size:30px;
+    font-weight: bold;
+    align-self: center;
+  }
+  .edit{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10%;
+    width:50%;
+    gap:10px;
+  }
+  input {
+    padding: 3%;
+    border-radius: 1%;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+.input-control {
+    position: relative;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+  }
+label {
+    font-size: larger;
+  }
+a{
+    font-size: large;
+    align-self: self-start;
+  }
+.button1{
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width:40%;
+    background-color: #0069FC ;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
