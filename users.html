@@ -6,6 +6,7 @@
     <link href="css/users.css" rel="StyleSheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>USERS</title>
 </head>
 
@@ -35,24 +36,25 @@
 
             <!-- Right Side -->
             <div class="optionData">
-                <h2 class="optionDataTitle">USERS</h2>
+                <h2 class="optionDataTitle">Users</h2>
                 <div class="colDisplay">
-                    <div class="rowDisplay" id="labelMargin">
+                    <div class="rowDisplay labelMargin" >
                         <h2>Name</h2>
-                        <h2>Phone Number</h2>
                         <h2>Email</h2>
-                        <h2>Password</h2>
                     </div>
-                    <div class="rowDisplay" id="labelMargin">
-                        <h2 class="rowData"></h2>
-                        <h2 class="rowData"></h2>
-                        <h2 class="rowData"></h2>
-                        <h2 class="rowData"></h2>
+                    <div class="colDisplay" id="colDisplay"> 
+                        <div class="rowDisplay labelMargin" id="usersData">
+                            <h2 class="rowData" id="usernameGet"></h2>
+                            <h2 class="rowData" id="emailGet"></h2>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <script src="scripts\users.js" ></script>
+
 </body>
 
 </html>
