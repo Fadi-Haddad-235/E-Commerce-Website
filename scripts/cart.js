@@ -1,9 +1,11 @@
 const prod = localStorage.getItem("cartItem");
 const parsed = JSON.parse(prod);
 const wrapper = document.getElementById("wrapper");
-const exit = document.getElementById("exit");
-let total = 0;
+const total = document.getElementById("total");
+let sum = 0;
 let count = 1;
+let minus;
+let plus;
 
 parsed.forEach((item) => {
   wrapper.innerHTML += `<div class="checkout">
@@ -15,29 +17,37 @@ parsed.forEach((item) => {
   </div>
   <div class="prodPrice">${item.item_price}$</div>
   <div class="prodAddRemove">
-    <button class="Addremove minus">-</button>
+    <button class="Addremove minus" value="${item.item_price}">-</button>
     <p>${count}</p>
-    <button class="Addremove plus" id="plus">+</button>
+    <button class="Addremove plus" id="plus" value="${item.item_price}">+</button>
   </div>
 </div>`;
 
-  total += item.item_price;
+  sum += item.item_price;
 });
 
-exit.innerHTML = `<p>Total:${total}$</p>
-<button class="proceed">Proceed to checkout</button>`;
+total.innerHTML = `Total:${sum}$`;
 
-const minus = document.querySelectorAll(".minus");
-const plus = document.querySelectorAll(".plus");
+minus = document.querySelectorAll(".minus");
+plus = document.querySelectorAll(".plus");
 
 plus.forEach((button) => {
   button.addEventListener("click", () => {
     count += 1;
+    sum += parseInt(button.value);
+    total.innerHTML = `Total:${sum}$`;
   });
 });
 
 minus.forEach((button) => {
   button.addEventListener("click", () => {
     count -= 1;
+    sum -= parseInt(button.value);
+    total.innerHTML = `Total:${sum}$`;
   });
+});
+
+const proceed = document.getElementById("proceed");
+proceed.addEventListener("click", () => {
+  window.location.href = "./checkout.html";
 });
