@@ -1,11 +1,44 @@
 window.onload=function(){
 
-    let user_name;
-    sessionStorage.setItem(user_name,"fadi");
+    let user_id;
+    sessionStorage.setItem(user_id,1);
 
-    const logged_user = sessionStorage.getItem(user_name);
+    const logged_user = sessionStorage.getItem(user_id);
 
-    console.log(logged_user);
+    const item_parent = document.getElementById("item");
+    console.log(item_parent);
 
-    
+    axios.get(`http://localhost/E-Commerce-Website-backend/favorites.php?logged_user=${logged_user}`)
+    .then(response => {
+        console.log(response.data); // print response data to console
+        const items = response.data;
+        // console.log(items,"hellllllo");
+        // category_name.innerText=items[0].category.toUpperCase();
+        items.forEach(item => {
+            const html = `
+              <div class="box">
+                <div class="image">
+                  <a href="http://localhost/E-Commerce-Website-backend/productdetails.html?id=${item.id}"><img src="${item.src}" alt=""></a>
+                </div>
+                <div class="info">
+                  <h3 class="title">${item.name}</h3>
+                  <div class="subinfo">
+                    <div class="price">${item.price}</div>
+                  </div>
+                  <div class="add-remove-btn">
+                    <button class="add-button">add to cart</button>
+                  </div>
+                </div>
+              </div>
+            `;
+            item_parent.insertAdjacentHTML("beforeend", html);
+          });
+
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+
+
 }

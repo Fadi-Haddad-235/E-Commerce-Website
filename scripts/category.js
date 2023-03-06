@@ -18,7 +18,11 @@ window.onload = function () {
         const html = `
               <div class="box">
                 <div class="image">
+<<<<<<< HEAD
+                  <a href="http://localhost/E-Commerce-Website-backend/productdetails.html?id=${item.id}"><img src="${item.src}" alt=""></a>
+=======
                   <a href="http://localhost/E-Commerce-Website-frontend/productdetails.html?category=${category}&id=${item.id}"><img src="${item.src}" alt=""></a>
+>>>>>>> 459fdac133464f5e16041937c2d4917eeef42a87
                 </div>
                 <div class="info">
                   <h3 class="title">${item.name}</h3>
