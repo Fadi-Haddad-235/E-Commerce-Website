@@ -95,11 +95,12 @@ a:hover {
 #profileIcon {
     font-size: 15rem;
     display: flex;
+    margin-left: 35%;
     justify-content: center;
 }
 
 .itemInfo {
-    margin-top: 5%;
+    /* margin-top: 5%; */
     margin-left: 10%;
     margin-right: 10%;
     flex: 1;
@@ -111,20 +112,27 @@ a:hover {
 
 .btn {
     margin-top: 3%;
-    background-color: #0069FC;
-    border-radius: 5%;
     display: flex;
-    margin-right: 35%;
-    margin-left: 35%;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
-#btn {
-    margin-left: 60%;
-    width: 20%;
-    height: 5%;
-    align-items: center;
+#btn1 {
+    background-color: #0069FC;
+    border-radius: 5%;
+    margin-left: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#btn2 {
+    background-color: #0069FC;
+    border-radius: 5%;
+    margin-right: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .inputdisplay {
@@ -132,18 +140,22 @@ a:hover {
     flex-direction: column;
     justify-content: flex-start;
     font-size: 1.5rem;
-    height: 40%;
+    height: 30%;
     margin-bottom: 2%;
-    ;
 }
 
 .inputdisplay input {
-    height: 2.25rem;
+    height: 1.5rem;
 }
 
 .imgURL{
     margin-left: 3%;
     margin-right: 3%;
+}
+
+.labelSize{
+    margin-top: 2%;
+    font-size: 1rem;
 }
 
 @media (max-width:800px) {

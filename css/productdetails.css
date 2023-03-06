@@ -5,19 +5,18 @@
   box-sizing: border-box;
 }
 
-.logo img {
+img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.navIcon img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
 .navBar {
   height: 25vh;
+  width: 100%;
+}
+
+.page {
   width: 100%;
 }
 
@@ -106,31 +105,119 @@
   transition: 0.7s;
 }
 
-@media screen and (max-width: 1000px) {
-  .navBtn {
-    font-size: 10px;
-  }
-  .shipping {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .navBtn {
-    font-size: 7px;
-  }
-}
-
-@media screen and (max-height: 500px) {
+/* @media screen and (max-height: 500px) {
   .categories-btn {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 
 @media screen and (max-height: 300px) {
   .categories-btn {
-    font-size: 7px;
+    font-size: 6px;
   }
+} */
+
+.info {
+  margin: 30px;
+  display: flex;
+}
+
+.productImage {
+  /* width: 700px;
+  min-width: 300px;
+  height: 350px;
+  min-height: 150px; */
+  width: 100%;
+  height: 100%;
+}
+
+.prodDetails {
+  margin: 20px;
+  /* height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items: start;
+  width: 70%;
+}
+
+.productName {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.productPrice {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.productAction {
+  background-color: #0069fc;
+  width: 20%;
+  padding: 5px;
+  border-radius: 10px;
+  color: aliceblue;
+  margin: 0 10px;
+}
+
+.productAction:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px #0069fc77;
+}
+
+.productAction:active {
+  transform: scale(0.98);
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.namePrice {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.similar {
+  margin-top: 30px;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  margin: 10px;
+}
+
+.suggestionDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+}
+
+.similarProducts {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 30vh; */
+  margin: 90px 0;
+}
+
+.suggestionDetails > p {
+  margin-top: 8px;
 }
 
 .footer {
@@ -181,6 +268,40 @@
   margin-right: 10px;
 }
 
+@media screen and (max-width: 1000px) {
+  .categories-btn {
+    font-size: 10px;
+  }
+
+  .productPrice {
+    font-size: 15px;
+  }
+
+  .addToCart {
+    font-size: 7px;
+  }
+
+  .productName {
+    font-size: 15px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .prodDetails {
+    font-size: 15px;
+    width: 90%;
+  }
+
+  .navBtn {
+    font-size: 10px;
+  }
+  .shipping {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .social {
     font-size: 10px;
@@ -191,8 +312,18 @@
   .siteMap {
     font-size: 10px;
   }
+  .similarProducts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .navBtn {
+    font-size: 7px;
+  }
 }
-@media screen and (max-width: 300px) {
+
+@media screen and (max-width: 400px) {
   .social {
     font-size: 5px;
   }
@@ -201,5 +332,64 @@
   }
   .siteMap {
     font-size: 5px;
+  }
+  /* img {
+    display: none;
+  } */
+  .socialMediaIcon {
+    width: 5%;
+    height: 5%;
+  }
+
+  .categories-btn {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .namePrice {
+    font-size: 15px;
+  }
+
+  .categories {
+    font-size: 8px;
+  }
+
+  .productPrice {
+    font-size: 15px;
+  }
+
+  .addToCart {
+    font-size: 15px;
+  }
+
+  .productName {
+    font-size: 15px;
+  }
+
+  .prodDetails {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-height: 300px) {
+  .categories-btn {
+    font-size: 5px;
+  }
+
+  .productPrice {
+    font-size: 7px;
+  }
+
+  .addToCart {
+    font-size: 7px;
+  }
+
+  .productName {
+    font-size: 7px;
+  }
+
+  .prodDetails {
+    font-size: 7px;
   }
 }
