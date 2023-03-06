@@ -31,6 +31,7 @@ axios({
   similar.forEach((object) => {
     console.log(object);
     similarProducts.innerHTML += `<div class="suggestion">
+    <a href="http://localhost/E-Commerce-Website-frontend/productdetails.html?category=${object.item_category}&id=${object.item_id}">
   <img src="${object.item_img_src}" alt="" />
   <div class="suggestionDetails">
     <p>Product Name:${object.item_name}</p>
