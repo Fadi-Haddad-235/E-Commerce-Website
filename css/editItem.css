@@ -95,6 +95,7 @@ a:hover {
 #profileIcon {
     font-size: 15rem;
     display: flex;
+    margin-left: 35%;
     justify-content: center;
 }
 
