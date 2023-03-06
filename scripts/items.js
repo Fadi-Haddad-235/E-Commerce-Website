@@ -19,9 +19,9 @@ window.onload = function () {
                         <h2 class="rowData">${item.item_price}</h2>
                         <h2 class="rowData">${item.item_img_src}</h2>
                         <a href="editItem.html" class="fas fa-edit"></a>   
-                        <a class="fas fa-trash-alt"></a>   
+                        <a href="removeitem.html" class="fas fa-trash-alt"></a>   
                     </div>
-                </div>
+                </div>  
             `;
             categories.insertAdjacentHTML("beforeend", html);
             });

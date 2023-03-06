@@ -14,7 +14,6 @@ function send() {
     data.append('category', category);
     data.append('imageURL', imageURL);
 
-
     axios({
         "method": "post",
         // "url": "http://localhost/E-Commerce-Website-backend/signup.php",
