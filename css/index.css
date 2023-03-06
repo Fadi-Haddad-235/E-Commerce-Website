@@ -37,9 +37,15 @@
     background: #3157ff;
 }
 
-.categories .box .image img {
-    height:225px;
-     width:225px;
+.new-arrivals .box .image img {
+  width: 250px;
+  height: 250px;
+}
+
+
+#new-arrival-img{
+  width: 250px !important;
+  height: 250px !important;
 }
 
 .box .info .title{
