@@ -4,7 +4,7 @@ window.onload = function() {
     axios.get('http://localhost/E-Commerce-Website-backend/index.php')
       .then(function(response) {
         const items = response.data;
-        console.log(items);
+        // console.log(items);
   
         items.forEach(item => {
           const html = `
