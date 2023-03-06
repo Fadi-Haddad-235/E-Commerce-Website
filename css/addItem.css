@@ -112,20 +112,27 @@ a:hover {
 
 .btn {
     margin-top: 3%;
-    background-color: #0069FC;
-    border-radius: 5%;
     display: flex;
-    margin-right: 35%;
-    margin-left: 35%;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
-#btn {
-    margin-left: 60%;
-    width: 20%;
-    height: 5%;
-    align-items: center;
+#btn1 {
+    background-color: #0069FC;
+    border-radius: 5%;
+    margin-left: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+#btn2 {
+    background-color: #0069FC;
+    border-radius: 5%;
+    margin-right: 10%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .inputdisplay {
