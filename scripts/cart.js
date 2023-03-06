@@ -1,6 +1,8 @@
 const prod = localStorage.getItem("cartItem");
 const parsed = JSON.parse(prod);
 const wrapper = document.getElementById("wrapper");
+const exit = document.getElementById("exit");
+let total = 0;
 let count = 1;
 
 parsed.forEach((item) => {
@@ -13,9 +15,29 @@ parsed.forEach((item) => {
   </div>
   <div class="prodPrice">${item.item_price}$</div>
   <div class="prodAddRemove">
-    <button class="Addremove" id="minus">-</button>
+    <button class="Addremove minus">-</button>
     <p>${count}</p>
-    <button class="Addremove" id="plus">+</button>
+    <button class="Addremove plus" id="plus">+</button>
   </div>
 </div>`;
+
+  total += item.item_price;
+});
+
+exit.innerHTML = `<p>Total:${total}$</p>
+<button class="proceed">Proceed to checkout</button>`;
+
+const minus = document.querySelectorAll(".minus");
+const plus = document.querySelectorAll(".plus");
+
+plus.forEach((button) => {
+  button.addEventListener("click", () => {
+    count += 1;
+  });
+});
+
+minus.forEach((button) => {
+  button.addEventListener("click", () => {
+    count -= 1;
+  });
 });
