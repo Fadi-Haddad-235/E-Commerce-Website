@@ -6,6 +6,7 @@
     <link href="css/addItem.css" rel="StyleSheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Add Items</title>
 </head>
 
@@ -43,38 +44,34 @@
                     <div class="itemInfo">
                         <div class="inputdisplay">
                             <label class="labelSize">Name</label>
-                            <input placeholder="Product Name" />
+                            <input placeholder="Product Name" id="name" name="name"/>
                         </div>
                         <div class="inputdisplay">
                             <label class="labelSize">Description</label>
-                            <input placeholder="Description" />
+                            <input placeholder="Description" id="description" name="description"/>
                         </div>
                         <div class="inputdisplay">
                             <label class="labelSize">Category</label>
-                            <input placeholder="Category" />
+                            <input placeholder="Category" id="category" name="category"/>
                         </div>
                         <div class="inputdisplay">
                             <label class="labelSize">Image location</label>
-                            <input placeholder="Image URL" />
+                            <input placeholder="Image URL"id="imageURL" name="imageURL"/>
                         </div>
                         <div class="inputdisplay">
                             <label class="labelSize">Price</label>
-                            <input placeholder="Price" />
-                        </div>
-                        <div class="inputdisplay">
-                            <label class="labelSize">Quantity</label>
-                            <input placeholder="Quantity" />
+                            <input placeholder="Price" id="price" name="price"/>
                         </div>
                         <div class="btn">
                             <a href="items.html" id="btn1">Save Changes!</a>
                             <a href="items.html" id="btn2">Cancel Process</a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="scripts\additem.js" ></script>
 </body>
 
 </html>
