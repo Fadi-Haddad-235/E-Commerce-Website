@@ -5,6 +5,11 @@ const id = searchParams.get("id");
 const category = searchParams.get("category");
 const info = document.getElementById("info");
 const similarProducts = document.getElementById("similarProducts");
+const goToCart = document.getElementById("cart");
+
+goToCart.addEventListener("click", () => {
+  window.location.href = "./cart.html";
+});
 
 axios({
   method: "get",
@@ -12,31 +17,46 @@ axios({
 }).then((res) => {
   const similar = res.data.similar;
   const prod = res.data.product;
-  info.innerHTML = `  <div class="productImage">
-<img src="${prod.item_img_src}" alt="" />
-</div>
-<div class="prodDetails">
-<div class="productName">${prod.item_name}</div>
-<div class="productPrice">${prod.item_price}$</div>
 
-<p>
+  info.innerHTML = `<div class="productImage">
+  <img src="${prod.item_img_src}" alt="" />
+  </div>
+  <div class="prodDetails">
+  <div class="productName">${prod.item_name}</div>
+  <div class="productPrice">${prod.item_price}$</div>
+  
+  <p>
   ${prod.item_description}
-</p>
-<div class="button">
-  <button class="productAction">Add to cart</button>
+  </p>
+  <div class="button">
+  <button class="productAction" id="addToCart">Add to cart</button>
   <button class="productAction">Favorite</button>
-</div>
-</div>`;
+  </div>
+  </div>`;
 
   similar.forEach((object) => {
     console.log(object);
     similarProducts.innerHTML += `<div class="suggestion">
     <a href="http://localhost/E-Commerce-Website-frontend/productdetails.html?category=${object.item_category}&id=${object.item_id}">
-  <img src="${object.item_img_src}" alt="" />
-  <div class="suggestionDetails">
+    <img src="${object.item_img_src}" alt="" />
+    <div class="suggestionDetails">
     <p>Product Name:${object.item_name}</p>
     <p>Price: ${object.item_price}$</p>
-  </div>
-</div>`;
+    </div>
+    </div>`;
+  });
+  const cart = document.getElementById("addToCart");
+  cart.addEventListener("click", () => {
+    const currentCart = localStorage.getItem("cartItem");
+    let parsed;
+
+    if (currentCart.length > 2) {
+      parsed = JSON.parse(currentCart);
+      parsed.push(prod);
+    } else {
+      parsed = [prod];
+    }
+
+    localStorage.setItem("cartItem", JSON.stringify(parsed));
   });
 });
