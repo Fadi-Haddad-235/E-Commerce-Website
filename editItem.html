@@ -6,7 +6,7 @@
     <link href="css/editItem.css" rel="StyleSheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Add Items</title>
+    <title>Edit Items</title>
 </head>
 
 <body>
@@ -35,33 +35,42 @@
 
             <!-- Right Side -->
             <div class="optionData">
-                <h2 class="optionDataTitle">ADD ITEM</h2>
+                <h2 class="optionDataTitle">Edit Item</h2>
                 <div class="colDivision">
                     <div class="profileImage">
                         <a class="fa fa-user" id="profileIcon"></a>
-                        <input class="imgURL" placeholder="Image URL" />
-                        <a href="#" class="btn">Edit Image</a>
                     </div>
                     <div class="itemInfo">
                         <div class="inputdisplay">
-                            <label>Name</label>
+                            <label class="labelSize">Name</label>
                             <input placeholder="Product Name" />
                         </div>
                         <div class="inputdisplay">
-                            <label>Description</label>
+                            <label class="labelSize">Description</label>
                             <input placeholder="Description" />
                         </div>
                         <div class="inputdisplay">
-                            <label>Price</label>
+                            <label class="labelSize">Category</label>
+                            <input placeholder="Category" />
+                        </div>
+                        <div class="inputdisplay">
+                            <label class="labelSize">Image location</label>
+                            <input placeholder="Image URL" />
+                        </div>
+                        <div class="inputdisplay">
+                            <label class="labelSize">Price</label>
                             <input placeholder="Price" />
                         </div>
                         <div class="inputdisplay">
-                            <label>Quantity</label>
+                            <label class="labelSize">Quantity</label>
                             <input placeholder="Quantity" />
+                        </div>
+                        <div class="btn">
+                            <a href="items.html" id="btn1">Save Changes!</a>
+                            <a href="items.html" id="btn2">Cancel Process</a>
                         </div>
                     </div>
                 </div>
-                <a href="items.html" class="btn" id="btn">Edit Item!</a>
             </div>
         </div>
     </div>
