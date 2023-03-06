@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/signup.js" ></script>
 <link rel="stylesheet" href="css/loginsignup.css" />
 </head>
 <body>
@@ -39,27 +41,27 @@
         <br><br><p class="align">My Account</p>
     </div>
     <div class="edit">
-        <form class="form">
+        <form class="form" >
             <p class="align">Signup</p>
             <div class="input-control">
                 <label for="username">Username:</label>
-                <input class="input" id="username"  type="text">
+                <input class="input" id="username" name="username" type="text">
             </div>
             <div class="input-control">
                 <label for="email">Email:</label>
-                <input class="input" id="email"  type="text">
+                <input class="input" id="email" name="email" type="text">
             </div>
             <div class="input-control">
                 <label for="password">Password:</label>
-                <input class="input" id="password"  type="text">
+                <input class="input" id="password" name="password" type="text">
             </div>
             <div class="input-control">
                 <label for="cpassword">Confirm assword:</label>
-                <input class="input" id="password"  type="text">
+                <input class="input" id="confirmpassword" name="confirmpassword" type="text">
             </div>
     
             <div class="input-control">
-                <button class="button1" type="submit">Submit</button> 
+                <button  id="signup" class="button1" type="submit">Submit</button> 
             </div>
             <p><b>Already have an account? </b><a href="login.html">Login now</a> </p>   
         </form>
