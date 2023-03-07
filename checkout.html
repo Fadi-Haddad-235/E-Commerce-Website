@@ -39,40 +39,32 @@
           <br><br>
           <p class="align">Checkout:</p>
 
-          <div class="input-control">
-            <div>
-            <input class="input" id="pname"  placeholder="Product Name" type="text">
-            <input class="input" id="pdetails"  placeholder="Order Details" type="text">
-            </div>
-            <div >
-            <input class="input" id="email"  placeholder="Product Price"type="text">   
-            </div>
-          </div>
+          <div class="items" id="items"></div>
           <hr>
           <div class="input-control">
             <div>
-            <p class="total">Total:</p>
+            <p class="total" id=""total>Total:</p>
             </div>
             <div >
-            <input class="input" id="totalprice"  placeholder="Total Price" type="text">   
+            <div class="displaytotal" id="total" ></div>   
     </div>
   </div>
           <div class="edit">
             <form>
             <div class="input-control1">
-            <label for="email">Email:</label>
-            <input class="input" id="email"  type="text">
+            <label >Payment method:</label>
+            <input class="input" id="payment"  type="text">
             </div>
             <div class="input-control1">
-            <label for="email">Card Number:</label>
+            <label >Card Number:</label>
             <input class="input" id="cardnumber"  type="text">
             </div>
             <div class="input-control1">
-            <label for="email">Phone Number:</label>
+            <label >Phone Number:</label>
             <input class="input" id="phonenumber"  type="text">
             </div>
             <div class="input-control1">
-            <label for="email">Address:</label>
+            <label >Address:</label>
             <input class="input" id="address"  type="text">
             </div>
             <div class="input-control1">
@@ -107,5 +99,6 @@
         <p>Contact us</p>
       </div>
     </div>
+    <script src="./scripts/checkout.js"></script>
 </body>
 </html>
