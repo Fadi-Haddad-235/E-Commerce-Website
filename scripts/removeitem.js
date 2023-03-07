@@ -1,20 +1,27 @@
+document.getElementById("btn1").addEventListener("click", function(event){
 
-document.getElementById("removeItem").addEventListener("click", deleteItem());
+    const id = document.getElementById("id1").value;
+    let data = new FormData();
 
-function deleteItem() {
-    id=1;
-    if (confirm("Are you sure you want to delete this item?")) {
-      // Send a DELETE request to the server-side script
-      fetch("deleteitem.php?id=" + id, {
-        method: "DELETE"
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log(data.message); // Print a message from the server-side script
-        location.reload(); // Refresh the page to update the table
-      })
-      .catch(error => {
-        console.error(error);
-      });
-    }
-  }
+    data.append('id',id);
+
+    axios.get('http://localhost/FullStackECommerceBE/removeitem.php',data).then((result) => {
+        console.log(result);
+
+    }).catch((err) => {
+        console.error(err);
+    });
+    // axios({
+    //     "method": "get",
+    //     // "url": "http://localhost/E-Commerce-Website-backend/removeitem.php",
+    //     "url": "http://localhost/FullStackECommerceBE/removeitem.php",
+    //     "data": data
+    // }).then((result) => {
+    //     console.log(result ,id);
+
+    // }).catch((err) => {
+    //     console.error(err);
+    // });
+});
+
+

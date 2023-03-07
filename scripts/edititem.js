@@ -1,6 +1,5 @@
-document.getElementById("btn1").addEventListener("click", send);
-
-function send() {
+document.getElementById("btn1").addEventListener("click", function(event) {
+    const id = document.getElementById("id").value;
     const name = document.getElementById("name").value;
     const price = document.getElementById("price").value;
     const description = document.getElementById("description").value;
@@ -8,22 +7,19 @@ function send() {
     const imageURL = document.getElementById("imageURL").value;
 
     let data = new FormData();
+    data.append('id',id);
     data.append('name', name);
-    data.append('price', price);
     data.append('description', description);
     data.append('category', category);
     data.append('imageURL', imageURL);
-    console.log(data.value);
+    data.append('price', price);
 
-    axios({
-        "method": "post",
-        // "url": "http://localhost/E-Commerce-Website-backend/signup.php",
-        "url": "http://localhost/FullStackECommerceBE/additem.php",
-        "data": data
-    }).then((result) => {
-        console.log(result)
 
-    }).catch((err) => {
-        console.error(err)
-    });
-}
+    axios.post('http://localhost/FullStackECommerceBE/edit.php', data)
+        .then(function(response) {
+            alert('Data updated successfully!');
+        })
+        .catch(function(error) {
+            alert('Error updating data.');
+        });
+});

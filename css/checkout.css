@@ -4,6 +4,9 @@
   box-sizing: border-box;
   border:0px;
 }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .logo img {
   object-fit: cover;
   height: 100%;
@@ -117,6 +120,15 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  .input-control1{
+    margin-top: 2%;
+    margin-left:20%;
+    margin-right:20%;
+    width:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   input {
     padding: 2%;
     border-radius: 1%;
@@ -129,17 +141,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .input-control1{
-    margin-top: 2%;
-    margin-left:20%;
-    margin-right:20%;
-    width:300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  hr  
-{  
+  hr  {  
 width: 80%;  
 height: 2px;  
 background-color: #00347d;  
@@ -165,12 +167,26 @@ label{
     font-size: 16px;
     cursor: pointer;
 }
+.columns{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.tems{
+  margin-top:2%;
+  margin-left:20%;
+  margin-right: 20%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .footer {
   height: 35vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #486082;
+  color:white;
 }
 
 .social {
@@ -206,38 +222,35 @@ label{
   width: 100%;
   object-fit: contain;
 }
-
 .socialMediaIcon > img {
   height: 100%;
   width: 23%;
   object-fit: cover;
   margin-right: 10px;
 }
-
-
 @media screen and (max-width: 1000px) {
-    .navBtn {
-      font-size: 10px;
-    }
-    .shipping {
-      font-size: 10px;
-    }
+  .navBtn {
+    font-size: 10px;
   }
-  
-  @media screen and (max-width: 700px) {
-    .navBtn {
-      font-size: 7px;
-    }
+  .shipping {
+    font-size: 10px;
   }
-  
-  @media screen and (max-height: 500px) {
-    .categories {
-      font-size: 10px;
-    }
+}
+
+@media screen and (max-width: 700px) {
+  .navBtn {
+    font-size: 7px;
   }
-  
-  @media screen and (max-height: 300px) {
-    .categories {
-      font-size: 7px;
-    }
+}
+
+@media screen and (max-height: 500px) {
+  .categories-btn {
+    font-size: 10px;
   }
+}
+
+@media screen and (max-height: 300px) {
+  .categories-btn {
+    font-size: 7px;
+  }
+}

@@ -2,60 +2,61 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width">
-    <link href="css/editItem.css" rel="StyleSheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <title>Remove Items</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="css/editItem.css" rel="StyleSheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title>Remove Items</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="containerTitle">
-            <h1>Admin Page</h1>
-        </div>
-        <div class="containerBody">
-            <!-- Left Side -->
-            <div class="adminOption">
-                <div class="home iconImage">
-                    <a href="index.html" class="fa fa-home"></a>
-                    <h2>Home</h2>
-                </div>
-
-                <div class="users iconImage">
-                    <a href="users.html" class="fas fa-user-friends"></a>
-                    <h2>Users</h2>
-                </div>
-
-                <div class="database iconImage">
-                    <a href="items.html" class="fa fa-database"></a>
-                    <h2>Items</h2>
-                </div>
-            </div>
-
-            <!-- Right Side -->
-            <div class="optionData">
-                <h2 class="optionDataTitle">Remove Item</h2>
-                <div class="colDivision">
-                    <div class="profileImage">
-                        <a class="fa fa-trash-o" id="profileIcon"></a>
-                    </div>
-                    <div class="itemInfo">
-                        <div class="inputdisplay">
-                            <label class="labelSize">Product Name</label>
-                            <input placeholder="Product Name" />
-                        </div>
-                      
-                        <div class="btn">
-                            <a href="items.html" id="btn1">Remove Item!</a>
-                            <a href="items.html" id="btn2">Cancel Process</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="containerTitle">
+      <h1>Admin Page</h1>
     </div>
+    <div class="containerBody">
+      <!-- Left Side -->
+      <div class="adminOption">
+        <div class="home iconImage">
+          <a href="index.html" class="fa fa-home"></a>
+          <h2>Home</h2>
+        </div>
+
+        <div class="users iconImage">
+          <a href="users.html" class="fas fa-user-friends"></a>
+          <h2>Users</h2>
+        </div>
+
+        <div class="database iconImage">
+          <a href="items.html" class="fa fa-database"></a>
+          <h2>Items</h2>
+        </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="optionData">
+        <h2 class="optionDataTitle">Remove Item</h2>
+        <div class="colDivision">
+          <div class="profileImage">
+            <a class="fa fa-trash-o" id="profileIcon"></a>
+          </div>
+          <div class="itemInfo">
+            <div class="inputdisplay">
+              <label class="labelSize">Product Name</label>
+              <input placeholder="Name" name="id" id="id1" />
+            </div>
+
+            <div class="btn">
+              <a href="items.html" id="btn1">Remove Item!</a>
+              <a href="items.html" id="btn2">Cancel Process</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="scripts\removeitem.js"></script>
 </body>
 
 </html>
