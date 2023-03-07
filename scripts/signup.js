@@ -1,4 +1,4 @@
-let signup_btn = document.getElementById('signup');
+let signup_btn = document.getElementById('signup_btn');
 signup_btn.addEventListener('click', signup);
 
 function signup() {
@@ -18,12 +18,16 @@ function signup() {
         "url": "http://localhost/E-Commerce-Website-backend/signup.php",
         "data": data
     }).then((result) => {
-        console.log(result)
-        if (result.data.status == "success") {
-            alert("signed up")
-        }
+        console.log(result.data);
+        // console.log(result.data.status);
+        let x= result.data;
+        console.log(x[5])
+        // if (x == "success") {
+        //     alert("signed up"
+        //     );
+        // }
     }).catch((err) => {
-        console.error(err)
+        console.error(err);
     });
 }
 
