@@ -60,3 +60,30 @@ axios({
     localStorage.setItem("cartItem", JSON.stringify(parsed));
   });
 });
+
+cart.addEventListener("click", () => {
+  window.location.href = "./cart.html";
+});
+
+login.addEventListener("click", () => {
+  window.location.href = "./login.html";
+});
+
+// laptopbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=laptops";
+// });
+
+// phonebutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=phones";
+// });
+
+// headsetbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=headseats";
+// });
+
+// tabletbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=headseats";
+// });
+// gamingbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=gaming";
+// });
