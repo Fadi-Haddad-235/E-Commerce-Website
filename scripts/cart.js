@@ -51,3 +51,5 @@ const proceed = document.getElementById("proceed");
 proceed.addEventListener("click", () => {
   window.location.href = "./checkout.html";
 });
+
+localStorage.setItem("sum", sum);
