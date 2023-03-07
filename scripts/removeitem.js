@@ -1,23 +1,27 @@
-document.getElementById("btn1").addEventListener("click", deleteItem);
+document.getElementById("btn1").addEventListener("click", function(event){
 
-
-function deleteItem() {
-    const id = document.getElementById("id").value;
-    console.log(id);
-
+    const id = document.getElementById("id1").value;
     let data = new FormData();
 
-    data.append('id',parseInt(id));
+    data.append('id',id);
 
-    axios({
-        method: "get",
-        // "url": "http://localhost/E-Commerce-Website-backend/removeitem.php",
-        url: "http://localhost/FullStackECommerceBE/removeitem.php",
-        data: data
-    }).then((result) => {
-        console.log(result ,id);
+    axios.get('http://localhost/FullStackECommerceBE/removeitem.php',data).then((result) => {
+        console.log(result);
 
     }).catch((err) => {
         console.error(err);
     });
-}
+    // axios({
+    //     "method": "get",
+    //     // "url": "http://localhost/E-Commerce-Website-backend/removeitem.php",
+    //     "url": "http://localhost/FullStackECommerceBE/removeitem.php",
+    //     "data": data
+    // }).then((result) => {
+    //     console.log(result ,id);
+
+    // }).catch((err) => {
+    //     console.error(err);
+    // });
+});
+
+
