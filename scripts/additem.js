@@ -17,8 +17,8 @@ function send() {
 
     axios({
         "method": "post",
-        // "url": "http://localhost/E-Commerce-Website-backend/signup.php",
-        "url": "http://localhost/FullStackECommerceBE/additem.php",
+        "url": "http://localhost/E-Commerce-Website-backend/additem.php",
+        // "url": "http://localhost/FullStackECommerceBE/additem.php",
         "data": data
     }).then((result) => {
         console.log(result)

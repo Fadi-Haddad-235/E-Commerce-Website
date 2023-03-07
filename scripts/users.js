@@ -2,8 +2,8 @@ window.onload = function () {
 
     const categories = document.getElementById("colDisplay")
 
-    // axios.get('http://localhost/E-Commerce-Website-backend/index.php')
-    axios.get("http://localhost/FullStackECommerceBE/users.php")
+    axios.get('http://localhost/E-Commerce-Website-backend/users.php')
+    // axios.get("http://localhost/FullStackECommerceBE/users.php")
         .then(function (response) {
             const users = response.data;
             console.log(users);

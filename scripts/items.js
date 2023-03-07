@@ -2,8 +2,8 @@ window.onload = function () {
 
     const categories = document.getElementById("colDisplay")
 
-    // axios.get('http://localhost/E-Commerce-Website-backend/items.php')
-    axios.get("http://localhost/FullStackECommerceBE/items.php")
+    axios.get('http://localhost/E-Commerce-Website-backend/items.php')
+    // axios.get("http://localhost/FullStackECommerceBE/items.php")
         .then(function (response) {
             const items = response.data;
             console.log(items);

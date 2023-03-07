@@ -15,7 +15,7 @@ document.getElementById("btn1").addEventListener("click", function(event) {
     data.append('price', price);
 
 
-    axios.post('http://localhost/FullStackECommerceBE/edit.php', data)
+    axios.post('http://localhost/E-Commerce-Website-backend/edit.php', data)
         .then(function(response) {
             alert('Data updated successfully!');
         })

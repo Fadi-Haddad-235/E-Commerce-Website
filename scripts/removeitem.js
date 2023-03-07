@@ -5,7 +5,7 @@ document.getElementById("btn1").addEventListener("click", function(event){
 
     data.append('id',id);
 
-    axios.get('http://localhost/FullStackECommerceBE/removeitem.php',data).then((result) => {
+    axios.get('http://localhost/E-Commerce-Website-backend/removeitem.php',data).then((result) => {
         console.log(result);
 
     }).catch((err) => {
