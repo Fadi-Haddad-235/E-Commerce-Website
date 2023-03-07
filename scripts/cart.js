@@ -52,4 +52,39 @@ proceed.addEventListener("click", () => {
   window.location.href = "./checkout.html";
 });
 
+const cart = document.getElementById("cart");
+const laptopbutton = document.getElementById("laptopbutton");
+const phonebutton = document.getElementById("phonebutton");
+const headsetbutton = document.getElementById("headsetbutton");
+const tabletbutton = document.getElementById("tabletbutton");
+const gamingbutton = document.getElementById("gamingbutton");
+const login = document.getElementById("login");
+
+cart.addEventListener("click", () => {
+  window.location.href = "./cart.html";
+});
+
+login.addEventListener("click", () => {
+  window.location.href = "./login.html";
+});
+
+// laptopbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=laptops";
+// });
+
+// phonebutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=phones";
+// });
+
+// headsetbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=headseats";
+// });
+
+// tabletbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=headseats";
+// });
+// gamingbutton.addEventListener("click", () => {
+//   window.location.href = "./category.html?category=gaming";
+// });
+
 localStorage.setItem("sum", sum);

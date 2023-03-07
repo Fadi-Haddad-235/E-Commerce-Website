@@ -19,13 +19,7 @@ function signup() {
         "data": data
     }).then((result) => {
         console.log(result.data);
-        // console.log(result.data.status);
-        let x= result.data;
-        console.log(x[5])
-        // if (x == "success") {
-        //     alert("signed up"
-        //     );
-        // }
+
     }).catch((err) => {
         console.error(err);
     });
