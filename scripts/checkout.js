@@ -13,5 +13,5 @@ parsed.forEach((item) => {
   </div>`;
     sum += item.item_price;
   });
-  total.innerHTML = `Total:${sum}$`;
+  total.innerHTML = `${sum}`;
   

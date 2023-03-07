@@ -109,7 +109,7 @@ body{
 }
   .align{
     font-weight: bold;
-    font-size: x-large;
+    /* font-size: x-large; */
     margin-left: 20%;
   }
   .input-control{
@@ -171,14 +171,15 @@ label{
   display:flex;
   flex-direction:row;
   justify-content: space-between;
+  width:300px;
 }
 .tems{
   margin-top:2%;
-  margin-left:20%;
-  margin-right: 20%;
+  margin-left:38%;
+  width:300px;
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 .footer {
   height: 35vh;
