@@ -13,6 +13,7 @@ function send() {
     data.append('description', description);
     data.append('category', category);
     data.append('imageURL', imageURL);
+    console.log(data.value);
 
     axios({
         "method": "post",
