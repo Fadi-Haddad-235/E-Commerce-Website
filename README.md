@@ -1,4 +1,4 @@
-# Full Stack Commerce-Website</br>
+# Full Stack E-Commerce-Website</br>
 # This website is a team project, made to show the team members design and programming ability in front end and backend.<br>
 # Team :</br>
 Fadi Haddad</br>
