@@ -113,7 +113,8 @@ body{
     height:150px;
     background-color: #00347D;
     text-align: center;
-    border:1px solid;
+    /* border:1px solid; */
+    color:white;
 
   }
   .align{
@@ -174,6 +175,7 @@ a{
     justify-content: space-around;
     align-items: center;
     background-color: #486082;
+    color:white;
   }
   
   .social {
