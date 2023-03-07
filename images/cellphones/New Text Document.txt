@@ -1,0 +1,29 @@
+oppo-a96
+Qualcomm SM6225 Snapdragon 680 4G
+Octa-Core CPU / Adreno 610 GPU
+
+
+Oppo A77S
+
+Qualcomm SM6225 Snapdragon 680 4G
+Octa-Core CPU / Adreno 610 GPU
+
+
+Oppo A77
+Mediatek MT6833P Dimensity 810
+Octa-Core CPU / Mali-G57 MC2 GPU
+
+
+Oppo A57
+Mediatek MT6765 Helio G35
+Octa-Core CPU / PowerVR GE8320 GPU
+
+
+BlackView
+BlackView OSCAL S60Pro
+6.53″ IPS LCD 720×1600 pixels
+
+
+BlackView A95
+Mediatek MT6771V/CT Helio P70
+Octa-Core CPU / Mali-G72 MP3 GPU
