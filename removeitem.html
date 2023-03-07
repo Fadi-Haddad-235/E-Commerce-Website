@@ -3,11 +3,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width">
-    <link href="css/items.css" rel="StyleSheet" />
+    <link href="css/editItem.css" rel="StyleSheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>ITEMS</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Remove Items</title>
 </head>
 
 <body>
@@ -36,37 +36,26 @@
 
             <!-- Right Side -->
             <div class="optionData">
-                <h2 class="optionDataTitle">ITEMS</h2>
-                <div class="colDisplay">
-                    <div class="rowDisplay" id="labelMargin">
-                        <h2>Name</h2>
-                        <h2>Description</h2>
-                        <h2>Category</h2>
-                        <h2>Price</h2>
-                        <h2>Image Source</h2>
+                <h2 class="optionDataTitle">Remove Item</h2>
+                <div class="colDivision">
+                    <div class="profileImage">
+                        <a class="fa fa-trash-o" id="profileIcon"></a>
                     </div>
-                    <div class="colDisplay" id="colDisplay">
-                        <div class="rowDisplay">
-                            <!-- <a class="fa fa-image"></a>
-                            <h2 class="rowData"></h2>
-                            <h2 class="rowData"></h2>
-                            <h2 class="rowData"></h2>
-                            <h2 class="rowData"></h2>
-                            <h2 class="rowData"></h2>
-                            <a href="editItem.html" class="fas fa-edit"></a>
-                            <a href="removeitem.html" class="fas fa-trash-alt"></a> -->
+                    <div class="itemInfo">
+                        <div class="inputdisplay">
+                            <label class="labelSize">Product Name</label>
+                            <input placeholder="Product Name" />
+                        </div>
+                      
+                        <div class="btn">
+                            <a href="items.html" id="btn1">Remove Item!</a>
+                            <a href="items.html" id="btn2">Cancel Process</a>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <a href="addItem.html" class="btn">Add Item!</a>
-                    <a href="editItem.html" class="btn">Edit Item!</a>
-                    <a href="removeitem.html" class="btn">Remove Item!</a>
                 </div>
             </div>
         </div>
     </div>
-    <script src="scripts\items.js"></script>
 </body>
 
 </html>
