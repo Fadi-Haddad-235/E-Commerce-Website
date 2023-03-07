@@ -61,12 +61,20 @@ axios({
   });
 });
 
+const login = document.getElementById("login");
+const fav = document.getElementById("fav");
+const cart = document.getElementById("cart");
+
 cart.addEventListener("click", () => {
   window.location.href = "./cart.html";
 });
 
 login.addEventListener("click", () => {
   window.location.href = "./login.html";
+});
+
+fav.addEventListener("click", () => {
+  window.location.href = "./favorites.html";
 });
 
 // laptopbutton.addEventListener("click", () => {

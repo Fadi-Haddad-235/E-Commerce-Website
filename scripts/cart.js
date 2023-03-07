@@ -59,6 +59,7 @@ const headsetbutton = document.getElementById("headsetbutton");
 const tabletbutton = document.getElementById("tabletbutton");
 const gamingbutton = document.getElementById("gamingbutton");
 const login = document.getElementById("login");
+const fav = document.getElementById("fav");
 
 cart.addEventListener("click", () => {
   window.location.href = "./cart.html";
@@ -66,6 +67,10 @@ cart.addEventListener("click", () => {
 
 login.addEventListener("click", () => {
   window.location.href = "./login.html";
+});
+
+fav.addEventListener("click", () => {
+  window.location.href = "./favorites.html";
 });
 
 // laptopbutton.addEventListener("click", () => {
